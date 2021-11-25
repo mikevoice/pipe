@@ -1,0 +1,10 @@
+
+   Speedtest by Ookla
+
+     Server: Mobile TeleSystems JLLC - Minsk (id = 4268)
+        ISP: A1 Belarus
+    Latency:     5.63 ms   (0.11 ms jitter)
+   Download:    91.60 Mbps (data used: 42.5 MB )                               
+     Upload:    94.87 Mbps (data used: 74.6 MB )                               
+Packet Loss:     0.0%
+ Result URL: https://www.speedtest.net/result/c/f90ead1b-c202-4ee5-a369-10eccdb4f369
