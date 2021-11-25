@@ -1,0 +1,10 @@
+
+   Speedtest by Ookla
+
+     Server: Datahata Ltd - Minsk (id = 14318)
+        ISP: A1 Belarus
+    Latency:     6.49 ms   (0.91 ms jitter)
+   Download:    88.61 Mbps (data used: 43.2 MB )                               
+     Upload:    93.75 Mbps (data used: 86.6 MB )                               
+Packet Loss:     0.0%
+ Result URL: https://www.speedtest.net/result/c/f6e5e867-c72d-41bc-9c1c-938612072bda
