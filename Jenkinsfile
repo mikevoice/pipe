@@ -20,7 +20,7 @@ peline {
        }
        stage('clone repository github') {
           steps {
-             git url: 'https://github.com/mikevoice/pipe.git', branch: 'master', credentialsId: "node_to_git"
+             git url: 'https://github.com/mikevoice/pipe.git', branch: 'master', credentialsId: "token_g"
           }
        }
        stage('push github') {
