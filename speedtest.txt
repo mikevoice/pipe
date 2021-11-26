@@ -63,3 +63,14 @@ Fri Nov 26 00:00:06 UTC 2021
 Packet Loss:     0.0%
  Result URL: https://www.speedtest.net/result/c/00323f09-85e2-415d-9091-0f261f2d9d74
 Fri Nov 26 00:02:14 UTC 2021
+
+   Speedtest by Ookla
+
+     Server: Datahata Ltd - Minsk (id = 14318)
+        ISP: A1 Belarus
+    Latency:     6.45 ms   (1.74 ms jitter)
+   Download:    77.70 Mbps (data used: 61.7 MB )                               
+     Upload:    94.11 Mbps (data used: 98.1 MB )                               
+Packet Loss:     0.0%
+ Result URL: https://www.speedtest.net/result/c/61aa3601-278b-4947-bd6e-13ceb70464a5
+Fri Nov 26 00:04:23 UTC 2021
