@@ -28,8 +28,9 @@ pipeline {
         stage('Deploy') {
             steps {
                 sh """
-                kubectl apply -f deploy.yaml
-                kubectl apply -f ingress.yaml
+                kubectl get ns
+                # kubectl apply -f deploy.yaml
+                # kubectl apply -f ingress.yaml
                 """
             }
         }
