@@ -12,9 +12,9 @@ pipeline {
     stages {
         stage('Clone repository') {
             steps {
-                git url: 'git@github.com:mikevoice/pipe.git',
+                git url: 'https://github.com:mikevoice/pipe.git',
                 branch: 'master',
-                credentialsId: "node_to_git"
+                credentialsId: "token_g"
             }
         }
         stage('Kubeval test') {
