@@ -1,14 +1,5 @@
 pipeline {
-    agent {
-        kubernetes {
-            containerTemplate {
-            name 'kubeval-test-yaml'
-            image 'garethr/kubeval:0.15.0'
-            ttyEnabled true
-            command 'watch date'
-            }
-        }
-    }
+    agent any
     stages {
         stage('Clone repository') {
             steps {
