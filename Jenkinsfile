@@ -13,7 +13,7 @@ pipeline {
         stage('Clone repository') {
             steps {
                 git url: 'https://github.com:mikevoice/pipe.git',
-                branch: 'master',
+                branch: 'main',
                 credentialsId: "token_g"
             }
         }
