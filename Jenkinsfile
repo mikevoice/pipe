@@ -21,7 +21,7 @@ pipeline {
             steps {
                 sh """
                 kubeval deploy.yaml -o json
-                kubeval ingres.yaml -o json
+                kubeval ingress.yaml -o json
                 """
             }
         }
@@ -29,7 +29,7 @@ pipeline {
             steps {
                 sh """
                 kubectl apply -f deploy.yaml
-                kubectl apply -f ingres.yaml
+                kubectl apply -f ingress.yaml
                 """
             }
         }
