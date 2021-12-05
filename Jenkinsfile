@@ -3,6 +3,8 @@ pipeline {
        node {
          label 'master'
          customWorkspace '/home/vagrant/app_temp'
+       }
+    }
     stages {
         stage('Clone repository') {
             steps {
