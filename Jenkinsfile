@@ -1,28 +1,37 @@
 pipeline {
     agent {
         kubernetes {
-        yamlFile 'build-pod.yaml'  // path to the pod definition relative to the root of our project 
+            containerTemplate {
+            name 'kubeval-test-yaml'
+            image 'garethr/kubeval:0.15.0'
+            ttyEnabled true
+            command 'watch date'
+            }
         }
     }
     stages {
         stage('Clone repository') {
             steps {
+                container('kubeval-test-yaml') {
                 git url: 'https://github.com/mikevoice/project.git',
                 branch: 'main',
                 credentialsId: "token_g"
+                }
             }
         }
         stage('Kubeval test') {
             steps {
+                container('kubeval-test-yaml') {
                 sh """
-                ip addr
+                kubectl get ns
                 """
+                }
             }
         }
         stage('Deploy') {
             steps {
                 sh """
-                kubectl get ns
+                # kubectl get ns
                 # kubectl apply -f deploy.yaml
                 # kubectl apply -f ingress.yaml
                 """
