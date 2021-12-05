@@ -13,6 +13,7 @@ pipeline {
         stage('Jenkins play ansible') {
             steps {
                 sh """
+                ssh ansible@192.168.0.165
                 ansible --version
                 """
             }
