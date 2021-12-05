@@ -15,8 +15,7 @@ pipeline {
         stage('Kubeval test') {
             steps {
                 sh """
-                kubeval deploy.yaml -o json
-                kubeval ingress.yaml -o json
+                ip addr
                 """
             }
         }
