@@ -24,7 +24,7 @@ pipeline {
             steps {
                 container('maven') {
                 sh """
-                kubectl get ns
+                mvn -version
                 """
                 }
             }
