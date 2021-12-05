@@ -22,7 +22,7 @@ pipeline {
         }
         stage('Kubeval test') {
             steps {
-                container('kubeval-test-yaml') {
+                container('maven') {
                 sh """
                 kubectl get ns
                 """
