@@ -15,7 +15,7 @@ pipeline {
                 sh """#!/bin/bash
                 ssh ansible@192.168.0.165
                 echo "======Hello====="
-                ansible -m ping all
+                git status
                 """
             }
         }
