@@ -1,18 +1,19 @@
 pipeline {
     agent {
         kubernetes {
-            containerTemplate {
-            name 'kubeval-test-yaml'
-            image 'garethr/kubeval:0.15.0'
-            ttyEnabled true
-            command 'watch date'
-            }
+            label 'mypod'
+                containerTemplate {
+                name 'maven'
+                image 'maven:3.3.9-jdk-8-alpine'
+                ttyEnabled true
+                command 'cat'
+                }   
         }
-    }
+    } 
     stages {
         stage('Clone repository') {
             steps {
-                container('kubeval-test-yaml') {
+                container('maven') {
                 git url: 'https://github.com/mikevoice/project.git',
                 branch: 'main',
                 credentialsId: "token_g"
