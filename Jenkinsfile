@@ -12,7 +12,7 @@ pipeline {
         }
         stage('Jenkins play ansible') {
             steps {
-                sh """
+                sh """#!/bin/bash
                 ssh ansible@192.168.0.165
                 ansible -m ping all
                 """
