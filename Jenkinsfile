@@ -12,14 +12,7 @@ pipeline {
         }
         stage('Jenkins play ansible') {
             steps {
-                sh """#!/bin/bash
-                ssh ansible@192.168.0.165 ansible --version
-                echo "======Hello====="
-                ssh ansible@192.168.0.165 ansible -m ping all
-                who
-                date
-                git status
-                """
+                ansiblePlaybook credentialsId: 'private-key', installation: 'ansible', inventory: 'inv.yaml', playbook: 'play.yaml'
             }
         }
     }    
