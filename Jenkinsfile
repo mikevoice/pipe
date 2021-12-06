@@ -13,7 +13,7 @@ pipeline {
         stage('Jenkins play ansible') {
             steps {
                 sh """#!/bin/bash
-                ssh ansible@192.168.0.165
+                ssh ansible@192.168.0.165 << ansible --version
                 echo "======Hello====="
                 who
                 ansible --version
