@@ -15,6 +15,7 @@ pipeline {
                 sh """#!/bin/bash
                 ssh ansible@192.168.0.165 ansible --version
                 echo "======Hello====="
+                ssh ansible@192.168.0.165 ansible -m ping all
                 who
                 date
                 git status
