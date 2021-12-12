@@ -1,0 +1,63 @@
+pipeline {
+    agent {
+        label 'master'
+    }
+    stages {
+        stage('Clone repository') {
+            steps {
+                git url: 'https://github.com/mikevoice/project.git',
+                branch: 'main',
+                credentialsId: "token_g"
+            }
+        }
+        stage('joomla change version ') {
+            steps {
+                sh """#!/bin/bash 
+                cat roles/joomla/defaults/main.yaml
+                awk -v ver='"$VERSION"' '{sub("^joomla_version:*.*", "joomla_version: " ver )}1' roles/joomla/defaults/main.yaml > roles/joomla/defaults/m.yaml && mv roles/joomla/defaults/m.yaml roles/joomla/defaults/main.yaml
+                """
+            }
+        }
+        stage('joomla install or update') {
+            steps {
+                sh """#!/bin/bash 
+                cat roles/joomla/defaults/main.yaml
+                awk -v update='$INSTALL_OR_UPDATE"' '{sub("Stable-*.*", update )}1' roles/joomla/defaults/main.yaml > roles/joomla/defaults/m.yaml && mv roles/joomla/defaults/m.yaml roles/joomla/defaults/main.yaml
+                """
+            }
+        }
+        stage('output file ') {
+            steps {
+                sh """#!/bin/bash 
+                cat roles/joomla/defaults/main.yaml
+                """
+            }
+        }        
+        stage('push to github ') {
+            steps {
+                withCredentials([usernamePassword(credentialsId: 'token_g', passwordVariable: 'PASS', usernameVariable: 'USER')]) {
+                    script {
+                        env.encodedPass=URLEncoder.encode(PASS, "UTF-8")
+                    }                
+                    sh """#!/bin/bash 
+                    git add --all
+                    git commit -m "change joomla version"
+                    git push https://${USER}:${encodedPass}@github.com/mikevoice/project.git main
+                    """
+                }
+
+            }
+        }
+    }    
+    post {
+        success {
+                slackSend (color: '#00FF00', message: "SUCCESSFUL: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL})")
+        }
+        failure {
+                slackSend (color: '#FF0000', message: "FAILED: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL})")
+        }
+        always {
+            deleteDir()
+        }
+    }
+}  
