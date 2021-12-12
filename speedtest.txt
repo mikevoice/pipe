@@ -1,76 +1,0 @@
-
-   Speedtest by Ookla
-
-     Server: Mobile TeleSystems JLLC - Minsk (id = 4268)
-        ISP: A1 Belarus
-    Latency:     5.73 ms   (0.06 ms jitter)
-   Download:    92.21 Mbps (data used: 41.7 MB )                               
-     Upload:    94.69 Mbps (data used: 46.1 MB )                               
-Packet Loss:     0.0%
- Result URL: https://www.speedtest.net/result/c/843cea04-6929-4790-b12d-c684e1fe0968
-
-   Speedtest by Ookla
-
-     Server: Mobile TeleSystems JLLC - Minsk (id = 4268)
-        ISP: A1 Belarus
-    Latency:     6.25 ms   (1.23 ms jitter)
-   Download:    84.66 Mbps (data used: 57.1 MB )                               
-     Upload:    94.85 Mbps (data used: 66.3 MB )                               
-Packet Loss:     0.0%
- Result URL: https://www.speedtest.net/result/c/ce43d012-86be-4cc0-9bac-9d5d7a53c3ec
-Thu Nov 25 23:51:27 UTC 2021
-
-   Speedtest by Ookla
-
-     Server: Datahata Ltd - Minsk (id = 14318)
-        ISP: A1 Belarus
-    Latency:     6.47 ms   (57.13 ms jitter)
-   Download:    79.05 Mbps (data used: 44.7 MB )                               
-     Upload:    93.88 Mbps (data used: 71.5 MB )                               
-Packet Loss:     0.0%
- Result URL: https://www.speedtest.net/result/c/4f460a28-cfcb-477c-8535-eaa3f7ec8374
-Thu Nov 25 23:52:42 UTC 2021
-
-   Speedtest by Ookla
-
-     Server: Datahata Ltd - Minsk (id = 14318)
-        ISP: A1 Belarus
-    Latency:     6.34 ms   (0.24 ms jitter)
-   Download:    75.94 Mbps (data used: 107.6 MB )                               
-     Upload:    91.28 Mbps (data used: 86.2 MB )                               
-Packet Loss:     0.0%
- Result URL: https://www.speedtest.net/result/c/83d71007-9212-4353-85ae-76934891e380
-Thu Nov 25 23:56:00 UTC 2021
-
-   Speedtest by Ookla
-
-     Server: Mobile TeleSystems JLLC - Minsk (id = 4268)
-        ISP: A1 Belarus
-    Latency:     6.23 ms   (0.35 ms jitter)
-   Download:    83.46 Mbps (data used: 40.8 MB )                               
-     Upload:    94.80 Mbps (data used: 47.5 MB )                               
-Packet Loss:     0.0%
- Result URL: https://www.speedtest.net/result/c/a74ff0dd-6b50-4c8b-9769-5cb0a522d98f
-Fri Nov 26 00:00:06 UTC 2021
-
-   Speedtest by Ookla
-
-     Server: Mobile TeleSystems JLLC - Minsk (id = 4268)
-        ISP: A1 Belarus
-    Latency:     6.22 ms   (0.52 ms jitter)
-   Download:    85.67 Mbps (data used: 39.6 MB )                               
-     Upload:    94.85 Mbps (data used: 67.5 MB )                               
-Packet Loss:     0.0%
- Result URL: https://www.speedtest.net/result/c/00323f09-85e2-415d-9091-0f261f2d9d74
-Fri Nov 26 00:02:14 UTC 2021
-
-   Speedtest by Ookla
-
-     Server: Datahata Ltd - Minsk (id = 14318)
-        ISP: A1 Belarus
-    Latency:     6.45 ms   (1.74 ms jitter)
-   Download:    77.70 Mbps (data used: 61.7 MB )                               
-     Upload:    94.11 Mbps (data used: 98.1 MB )                               
-Packet Loss:     0.0%
- Result URL: https://www.speedtest.net/result/c/61aa3601-278b-4947-bd6e-13ceb70464a5
-Fri Nov 26 00:04:23 UTC 2021
