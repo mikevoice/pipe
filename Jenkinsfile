@@ -10,7 +10,15 @@ pipeline {
                 credentialsId: "token_g"
             }
         }
-        stage('Jenkins play ansible') {
+        stage('inspect YAML') {
+            steps {
+                sh """
+                echo "------------------ inspect YAML ------------------"
+                ansible-lint -L play.yaml
+                """
+            }
+        }
+        stage('Ansible Playbook Joomla') {
             steps {
                 ansiblePlaybook credentialsId: 'private-key', installation: 'ansible', inventory: 'inv.yaml', playbook: 'play.yaml'
             }
